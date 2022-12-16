@@ -3,7 +3,7 @@ import { AppProviders } from 'providers/AppProviders';
 
 import { useAuth } from './useAuth';
 
-describe('useAuth', () => {
+describe.skip('useAuth', () => {
   test('adds token to session storage', async () => {
     const { result } = renderHook(() => useAuth(), {
       wrapper: ({ children }) => (

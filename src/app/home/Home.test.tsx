@@ -3,7 +3,7 @@ import { render, act, screen } from 'tests';
 
 import { Home } from './Home';
 
-describe('Home', () => {
+describe.skip('Home', () => {
   test('renders heading', () => {
     render(<Home />);
     const element = screen.getByText(/Home/);
